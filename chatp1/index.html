@@ -24,17 +24,24 @@
             <ul class="move-card-list">
                 <!-- card1 -->
                 <li class="movie-card">
-                    <img src="src/images/movie_weniv.png" alt="위니브월드 :새로운시대">
+                    <div class="icon">
+                        <img src="src/images/movie_weniv.png" alt="위니브월드 :새로운시대">
+                    </div>
                     <div class="movie-info-block">
                         <strong class="movie-name">위니브월드 : 새로운 시대</strong>
                         <dl class="movie-info">
-                            <div class="movie-info-detail">
-                                <dt>개요</dt>
-                                <dd>판타지</dd>
-                            </div>
-                            <div class="movie-info-detail">
-                                <dt>평점</dt>
-                                <dd>9.05</dd>
+                            <div class="movie-info-detail-main">
+                                <div class="movie-info-detail">
+                                    <dt>개요</dt>
+                                    <dd>판타지</dd>
+                                </div>
+                                <div class="movie-info-detail">
+                                    <dt>평점</dt>
+                                    <dd>
+                                        <img src="src/images/star.png" alt="star"/>
+                                        <p>9.05</p>
+                                    </dd>
+                                </div>
                             </div>
                             <div class="movie-info-detail">
                                 <dt>개봉</dt>
@@ -47,8 +54,11 @@
                         </dl>
                     </div>
                     <div class="movie-actions">
-                        <button>예매하기</button>
-                        <button>예고편</button>
+                        <button class="button-left">예매하기</button>
+                        <button class="button-right">
+                            <img src="src/images/btn_play.png" alt="play"/>
+                            <p>예고편</p>
+                        </button>
                     </div>
 
                 </li>

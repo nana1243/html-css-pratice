@@ -108,14 +108,11 @@
 }
 .movie-card{
     width: 220px;
-    height: 441px;
+    /*height: 441px;*/
     border-radius: 10px;
     border: 1px solid #BDBDBD;
-    padding: 19px 20px 0 20px;
+    height: 100%; /* 부모 높이를 기준으로 꽉 채우도록 설정 */
 
-}
-.movie-info-block{
-    padding: 11px 20px 18px 20px;
 }
 
 .movie-name{
@@ -125,6 +122,13 @@
     letter-spacing: 0;
 
 }
+.icon{
+    padding: 19px 19px 0 19px;
+}
+.movie-info-block{
+    margin: 11px 20px 18px 20px;
+}
+
 .movie-info{
     margin-top: 11px;
     display: flex;
@@ -133,6 +137,12 @@
 }
 .movie-info-detail{
     display: flex;
+    gap : 5px
+
+}
+.movie-info-detail-main{
+    display: flex;
+    gap: 20px;
 }
 
 dt{
@@ -141,19 +151,56 @@ dt{
     font-weight: 400;
     font-size: 13px;
     letter-spacing: 0;
-    /*text-align: center;*/
+
 }
 dd{
     font-weight: 400;
     font-size: 13px;
     line-height: 100%;
     letter-spacing: 0;
+    display: flex;
+    gap : 3px;
 }
 
-.movie-actions{
-    margin-top: 18px;
+.movie-actions {
     display: flex;
     flex-direction: row;
-    gap: 8px;
     margin-bottom: 0;
+    border-top: #BDBDBD solid 1px;
+    align-items: center;
+    height: 41px;
+    gap: 5px;
+    position: relative; /* 가상 요소의 위치 기준을 설정 */
+}
+
+.movie-actions::before {
+    content: ''; /* 가상 요소를 생성 */
+    position: absolute; /* 절대 위치 지정 */
+    top: 50%; /* 컨테이너의 수직 중앙에 위치 */
+    left: calc(50% - 4px); /* gap의 절반만큼 왼쪽으로 이동하여 중앙에 위치 */
+    width: 1px; /* 선의 너비 */
+    height: 100%; /* 선의 높이 */
+    background-color: #ccc; /* 선의 색상 */
+    transform: translateY(-50%); /* 수직 중앙 정렬을 위한 변환 */
+}
+
+.movie-actions button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0;
+    padding: 9px 28px 12px 27px;
+    /*width: 100%;*/
+    text-align: center;
+}
+
+.button-right{
+    display: flex;
+    gap: 3px
+}
+.button-right img{
+    height : 10%;
 }
