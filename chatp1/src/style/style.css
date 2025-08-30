@@ -62,6 +62,13 @@
     border: 2px solid #BDBDBD;
 
 }
+.long {
+    border-width: 1px;
+    opacity: 1;
+    margin: 0px 365px 36px 0;
+    width: 1000px;
+}
+
 .nav-movie{
     width: 372px; /* 부모 컨테이너의 너비 */
     height: 19px; /* 부모 컨테이너의 높이 */
@@ -203,4 +210,34 @@ dd{
 }
 .button-right img{
     height : 10%;
+}
+
+.footer{
+    background-color: #F2F2F2;
+    display: block;
+}
+.footer-container{
+    padding: 53px 365px 38px 366px;
+    width: 100%;
+}
+
+.footer-main{
+    display: flex;
+    flex-direction: column;
+
+}
+.company-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.company-name{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+.sns{
+    display: flex;
+    gap:22px
 }
