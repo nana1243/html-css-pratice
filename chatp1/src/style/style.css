@@ -218,7 +218,6 @@ dd{
 }
 .footer-container{
     padding: 53px 365px 38px 366px;
-    width: 100%;
 }
 
 .footer-main{
@@ -226,10 +225,12 @@ dd{
     flex-direction: column;
 
 }
-.company-info{
+.company-header-info{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    border-bottom: 2px solid #BDBDBD;
+
 }
 .company-name{
     font-weight: 700;
@@ -240,4 +241,37 @@ dd{
 .sns{
     display: flex;
     gap:22px
+}
+
+.company-info{
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    /*justify-content: space-around;*/
+    /*padding: 36px 0  38px 0;*/
+    gap : 3px;
+}
+
+.company-info div{
+    display: flex;
+    flex-direction: row;
+    gap : 3px;
+    border-right: #828282 2px;
+}
+
+.footer-bottom{
+    display: flex;
+    padding: 36px 0 38px 0;
+    justify-content: space-between;
+}
+
+small{
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0;
+
+
 }
