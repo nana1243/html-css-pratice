@@ -26,13 +26,88 @@
     overflow: hidden;
 }
 
+
 .container{
     width: 608px;
     height: 500px;
-    top: 271px;
-    left: 704px;
+    margin: 271px auto;
     border-radius: 15px;
-    angle: 0 deg;
-    opacity: 1;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+}
 
+.poster{
+    flex: 1 1 50%; /* flex-grow:1, flex-shrink:1, flex-basis:50% */
+    display: flex; /* 이미지를 정렬하기 위해 flex 컨테이너로 만듭니다. */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    position: relative; /* 자식의 absolute 위치를 기준으로 삼기 위해 필요할 수 있지만, 여기서는 이미지 자체를 정렬하는 데 사용됩니다. */
+    z-index: 2;
+}
+
+.poster img{
+    width: 281px;
+    height: 396px;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: -100px;
+}
+
+.content-wrapper{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    box-sizing: border-box; /* padding이 너비/높이에 포함되도록 설정 */
+    color: #ffffff;
+}
+
+.header{
+    padding: 60px 0 104px 0;
+}
+.header__info{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #BDBDBD;
+    padding-bottom: 13px;
+}
+.header__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.action{
+
+}
+.action button{
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    /* 아래 코드를 추가합니다. */
+    width: 60px; /* 너비 지정 */
+    height: 60px; /* 높이를 너비와 동일하게 지정 */
+    border-radius: 50%; /* 원형으로 만듭니다. */
+    overflow: hidden; /* 원형 밖으로 이미지가 튀어나오지 않도록 합니다. */
+}
+.action img{
+    width: 40px;
+    height: 40px;
+    border-width: 2px;
+
+}
+
+.ratings{
+    padding: 20px;
+}
+
+.ratings__caption{
+    width: 90px;
+    height: 23px;
+}
+.rating__stars img {
+    width: 50px;
+    height: 50px;
 }

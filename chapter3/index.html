@@ -9,30 +9,32 @@
 </head>
 <body>
     <article class="container">
-        <div class="info">
-            <p>드라마 | 전체이용가</p>
+        <div class="poster">
+            <img  src="src/assets/images/poster_bootcamp.jpg" alt="preview poster" />
         </div>
-        <header>
-            <img src="src/assets/images/poster_bootcamp.jpg" alt="preview poster" />
-            <h1>파이썬 부트 캠프</h1>
-        </header>
-        <div class="action">
-            <button aria-label="좋아요">
-                <img src="src/assets/images/icon_thumbs_up.png" alt="icon thumbs up"/>
-            </button>
-            <button aria-label="찜하기">
-                <img src="src/assets/images/icon_heart.png" alt="icon heart"/>
-            </button>
-        </div>
-        <figure>
-            <figcaption>별점 평균 4.5</figcaption>
-            <div class="rating-starts" role="img" aria-label="4.5점 중 5점" >
-                <img src="src/assets/images/icon_star.png" alt="star" />
-                <img src="src/assets/images/icon_star.png" alt="star" />
-                <img src="src/assets/images/icon_star.png" alt="star" />
-                <img src="src/assets/images/icon_half_star.png" alt="star" />
+        <div class="content-wrapper">
+            <header class="header">
+                <p class="header__info">드라마 | 전체이용가</p>
+                <h1 class="header__title">파이썬 부트 캠프</h1>
+            </header>
+            <div class="action">
+                <button aria-label="좋아요">
+                    <img src="src/assets/images/icon_thumbs_up.png" alt="icon thumbs up"/>
+                </button>
+                <button aria-label="찜하기">
+                    <img src="src/assets/images/icon_heart.png" alt="icon heart"/>
+                </button>
             </div>
-        </figure>
+            <figure class="ratings">
+                <figcaption class="ratings__caption">별점 평균 4.5</figcaption>
+                <div class="rating__stars" role="img" aria-label="4.5점 중 5점" >
+                    <img src="src/assets/images/icon_star.png" alt="star" />
+                    <img src="src/assets/images/icon_star.png" alt="star" />
+                    <img src="src/assets/images/icon_star.png" alt="star" />
+                    <img src="src/assets/images/icon_half_star.png" alt="star" />
+                </div>
+            </figure>
+        </div>
     </article>
 </body>
 </html>
