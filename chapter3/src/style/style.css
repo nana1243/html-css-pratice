@@ -79,14 +79,10 @@
     line-height: 100%;
 }
 
-.action{
-
-}
 .action button{
     background-color: transparent;
     border: 1px solid #FFFFFF;
     cursor: pointer;
-    /* 아래 코드를 추가합니다. */
     width: 60px; /* 너비 지정 */
     height: 60px; /* 높이를 너비와 동일하게 지정 */
     border-radius: 50%; /* 원형으로 만듭니다. */
@@ -101,6 +97,7 @@
 
 .ratings{
     padding: 20px;
+
 }
 
 .ratings__caption{
@@ -108,6 +105,18 @@
     height: 23px;
 }
 .rating__stars img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+}
+.ratings__remove{
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 100%;
+    overflow: hidden;
+    border: transparent;
+}
+.rating__stars .ratings__remove img{
+    width : 20px;
+    height: 20px;
+
 }
