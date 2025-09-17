@@ -18,7 +18,7 @@ class StarsPoint {
             star.addEventListener('click', () => this.click(index));
         });
 
-        this.ratingsStars.addEventListener('mouseleave', () => this.reset());
+        this.starPointResetButton.addEventListener('click', () => this.reset());
     }
 
     setRating(rating) {
@@ -35,14 +35,8 @@ class StarsPoint {
         });
     }
     reset(){
-        console.log('reset');
-        console.log('this is', this.rating)
         this.stars.forEach((star,i) => {
-            if (i < this.rating) {
-                star.src = starImageSourceMap.full;
-            } else {
-                star.src = starImageSourceMap.empty;
-            }
+            star.src = starImageSourceMap.empty;
         });
     }
     click(index){
