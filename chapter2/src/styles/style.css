@@ -26,4 +26,47 @@
     overflow: hidden;
 }
 
+.container{
 
+}
+
+.content-header{
+    margin: 50px;
+}
+
+.image-upload{
+    width: 185px;
+    height: 54px;
+    top: 156px;
+    left: 149px;
+    border-radius: 10px;
+    border: transparent;
+    angle: 0 deg;
+    opacity: 1;
+    background: #2F80ED;
+}
+.image-upload span{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.image-carousel img{
+    width: 289px;
+    height: 289px;
+    top: 350px;
+    left: 346px;
+    border-radius: 15.62px;
+    angle: 0 deg;
+    opacity: 1;
+
+}
