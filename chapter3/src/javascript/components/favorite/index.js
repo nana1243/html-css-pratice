@@ -1,9 +1,10 @@
 const starImageSourceMap = {
     thumbUpEmpty : 'src/assets/images/icon_thumbs_up.png',
-    thumbUpFull : 'src/assets/images/icon_thumbs_up_filled.png',
+    thumbUpFull : 'src/assets/images/icon_thumbs_up_fill.png',
     heartEmpty : 'src/assets/images/icon_heart.png',
-    heartFull : 'src/assets/images/icon_heart_filled.png'
+    heartFull : 'src/assets/images/icon_heart_fill.png'
 };
+
 
 class Favorite{
     constructor() {
